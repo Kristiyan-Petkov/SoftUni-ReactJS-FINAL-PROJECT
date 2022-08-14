@@ -5,8 +5,8 @@ export const HeaderArea = () => {
                     <p><img src="./logo.png" alt="Nivis Services" /></p>
                     <nav>
                         <ul>
-                            <li><a href="/">ABOUT NIVIS</a></li>
-                            <li><a href="/">SERVICES</a></li>
+                            <li><a href="/services">ABOUT NIVIS</a></li>
+                            <li><a href="/promotions">SERVICES</a></li>
                             <li><a href="/">CONTACT</a></li>
                             <li><a href="/">CLIENT PROFILE</a></li>
                             <li><a href="/">LOGIN</a></li>
@@ -16,8 +16,7 @@ export const HeaderArea = () => {
                             <li>
                                 <ul>
                                     <li><a href="/"><i className="fab fa-facebook-square"></i></a></li>
-                                    <li><a href="/"><i className="fab fa-instagram"></i></a></li>
-                                    <li><a href="/"><i className="fab fa-twitter"></i></a></li>
+                                    <li><a href="/"><i className="fab fa-linkedin"></i></a></li>
                                 </ul>
                             </li>
                         </ul>

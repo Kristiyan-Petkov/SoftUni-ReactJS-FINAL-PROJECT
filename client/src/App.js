@@ -1,8 +1,12 @@
-import { HeaderArea } from "./components/HeaderArea";
-import { Welcome } from "./components/Welcome";
-import { Services } from "./components/Services";
-import { Promos } from "./components/Promos";
-import { Footer } from "./components/Footer";
+// import { HeaderArea } from "./components/HeaderArea";
+// import { Welcome } from "./components/Welcome";
+// import { Services } from "./components/Services";
+// import { Promos } from "./components/Promos";
+// import { Footer } from "./components/Footer";
+import Home from "./components/main/Home";
+import Promotions from "./components/main/Promotions";
+import ServicesPage from "./components/main/ServicesPage";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const promoDeals = [
@@ -31,13 +35,19 @@ function App() {
 
   return (
     <div className="App">
-      <HeaderArea />
+      <Routes>
+        <Route path="/" element={<Home/>}></Route>
+        <Route path="promotions" element={<Promotions promos={promoDeals}/>}></Route>
+        <Route path="services" element={<ServicesPage/>}></Route>
+      </Routes>
+
+      {/* <HeaderArea />
       <main>
         <Welcome />
         <Services />
-        <Promos promos={promoDeals}/>
+        <Promos promos={promoDeals} />
       </main>
-      <Footer/>
+      <Footer /> */}
     </div >
   );
 }
