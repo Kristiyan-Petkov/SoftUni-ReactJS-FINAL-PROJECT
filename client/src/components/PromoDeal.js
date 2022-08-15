@@ -4,6 +4,7 @@ import styles from './PromoDeal.module.css'
 export const PromoDeal = (props) => {
     //useEffect only on load
     useEffect(() => {
+        //NEED TO OPEN SERVICE DETAILS PANEL
         console.log('Mounting promos');
     }, []);
 

@@ -1,19 +1,16 @@
 import {HeaderArea} from "../HeaderArea";
-import {Promos} from "../Promos";
 import {Footer} from "../Footer";
-// import { useParams } from "react-router-dom";
 
-const Promotions = (props) => {
-    // const {productId} = useParams();
+const P404 = () => {
     return (
         <div className="App">
             <HeaderArea />
             <main>
-                <Promos promos={props.promos} />
+                <h2>Page not found!</h2>
             </main>
             <Footer />
         </div >
     )
 };
 
-export default Promotions;
+export default P404;

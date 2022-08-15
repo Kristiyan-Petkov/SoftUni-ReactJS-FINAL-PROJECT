@@ -6,11 +6,14 @@
 import Home from "./components/main/Home";
 import Promotions from "./components/main/Promotions";
 import ServicesPage from "./components/main/ServicesPage";
+import P404 from "./components/main/P404";
+import Logout from "./components/main/Logout";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
   const promoDeals = [
     {
+      _id: 'ejbzvlzqbvoqbvozvbzee',
       title: 'Analysis',
       subTitle: 'Insights and Reporting',
       description: '1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...',
@@ -18,6 +21,7 @@ function App() {
       price: 40,
     },
     {
+      _id: 'nvjqoznnqsnqpqssvioneoiv',
       title: 'Charting',
       subTitle: 'PowerPoint and Keynote charting',
       description: '2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...',
@@ -25,6 +29,7 @@ function App() {
       price: 50,
     },
     {
+      _id: 'svsqvsdv9nnbbbbsposjdc',
       title: 'Data and KPI',
       subTitle: 'Databases and KPI sheets',
       description: '3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...',
@@ -36,9 +41,11 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home/>}></Route>
-        <Route path="promotions" element={<Promotions promos={promoDeals}/>}></Route>
-        <Route path="services" element={<ServicesPage/>}></Route>
+        <Route path="/" element={<Home promos={promoDeals}/>}></Route>
+        <Route path="/services" element={<Promotions promos={promoDeals}/>}></Route>
+        <Route path="/about" element={<ServicesPage/>}></Route>
+        {/* <Route path="/auth/logout" element={<Logout/>}></Route> */}
+        <Route path="*" element={<P404/>}></Route>
       </Routes>
 
       {/* <HeaderArea />

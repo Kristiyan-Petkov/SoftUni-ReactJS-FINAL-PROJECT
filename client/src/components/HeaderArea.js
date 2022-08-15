@@ -1,31 +1,52 @@
-export const HeaderArea = () => {
-    return (
-            <header className="header-area">
-                <section className="navigation">
-                    <p><img src="./logo.png" alt="Nivis Services" /></p>
-                    <nav>
-                        <ul>
-                            <li><a href="/services">ABOUT NIVIS</a></li>
-                            <li><a href="/promotions">SERVICES</a></li>
-                            <li><a href="/">CONTACT</a></li>
-                            <li><a href="/">CLIENT PROFILE</a></li>
-                            <li><a href="/">LOGIN</a></li>
-                            <li><a href="/">REGISTER</a></li>
-                            <li><a href="/">LOGOUT</a></li>
+import { Link, useNavigate, NavLink } from "react-router-dom";
+import styles from "./HeaderArea.module.css"
+// import { Navigate , createPath} from "react-router-dom";
 
-                            <li>
-                                <ul>
-                                    <li><a href="/"><i className="fab fa-facebook-square"></i></a></li>
-                                    <li><a href="/"><i className="fab fa-linkedin"></i></a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </section>
-                <section className="site-header">
+export const HeaderArea = () => {
+    const navigate = useNavigate();
+
+    const logoClick = () => {
+        navigate('/', {replace:"false"});
+    }
+    
+    // const logoutClick = () => {
+    //     navigate('/', {replace:"true"});
+    // }
+
+    const setStyle = ({isActive}) => {
+        return isActive
+        ? styles['active-link']
+        : undefined
+    }
+
+    return (
+        <header className="header-area">
+            <section className="navigation">
+                <p><img src="./logo.png" alt="Nivis Services" onClick={logoClick} /></p>
+                <nav>
+                    <ul>
+                        <li><NavLink to="/" className={setStyle}>HOME</NavLink></li>
+                        <li><NavLink to="/about" className={setStyle}>ABOUT</NavLink></li>
+                        <li><NavLink to="/services" className={setStyle}>SERVICES CATALOG</NavLink></li>
+                        <li><NavLink to="/contact" className={setStyle}>CONTACT</NavLink></li>
+                        <li><NavLink to="/profile" className={setStyle}>YOUR PROFILE</NavLink></li>
+                        <li><NavLink to="/auth/login" className={setStyle}>LOGIN</NavLink></li>
+                        <li><NavLink to="/auth/register" className={setStyle}>REGISTER</NavLink></li>
+                        <li><NavLink to="/auth/logout" className={setStyle}>LOGOUT</NavLink></li>
+
+                        <li>
+                            <ul>
+                                <li><Link to="/"><i className="fab fa-envelope"></i></Link></li>
+                                <li><a href="https://www.linkedin.com/company/nivis-services" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            {/* <section className="site-header">
                     <h1>Lorem Ipsum</h1>
                     <button>LEARN MORE</button>
-                </section>
-            </header >
+                </section> */}
+        </header >
     );
 }
