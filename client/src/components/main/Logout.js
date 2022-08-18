@@ -2,7 +2,8 @@ import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
     const navigate = useNavigate();
-    navigate('/', {replace: "false"});
+    console.log('logging out...');
+    return(navigate('/', {replace: "false"}))
 }
 
 export default Logout;

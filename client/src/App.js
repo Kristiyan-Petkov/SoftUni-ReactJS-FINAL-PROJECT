@@ -2,13 +2,14 @@ import { HeaderArea } from "./components/HeaderArea";
 // import { Welcome } from "./components/Welcome";
 // import { Services } from "./components/Services";
 // import { Promos } from "./components/Promos";
-// import { Footer } from "./components/Footer";
+import { Footer } from "./components/Footer";
 import Home from "./components/main/Home";
 import Promotions from "./components/main/Promotions";
 import ServicesPage from "./components/main/ServicesPage";
 import P404 from "./components/main/P404";
 import Logout from "./components/main/Logout";
 import { Routes, Route } from "react-router-dom";
+import { Login } from "./components/Login";
 
 function App() {
   const promoDeals = [
@@ -45,17 +46,12 @@ function App() {
         <Route path="/" element={<Home promos={promoDeals}/>}></Route>
         <Route path="/services" element={<Promotions promos={promoDeals}/>}></Route>
         <Route path="/about" element={<ServicesPage/>}></Route>
-        {/* <Route path="/auth/logout" element={<Logout/>}></Route> */}
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/logout" element={<Logout/>}></Route>
+        {/* <Route path="/register" element={<Logout/>}></Route> */}
         <Route path="*" element={<P404/>}></Route>
       </Routes>
-
-      {/* <HeaderArea />
-      <main>
-        <Welcome />
-        <Services />
-        <Promos promos={promoDeals} />
-      </main>
-      <Footer /> */}
+      <Footer />
     </div >
   );
 }

@@ -3,37 +3,37 @@ export const Services = () => {
         <h2>Our Services</h2>
         <ul>
             <li><a href="/">
-                <img src="./Images/backpack.png" alt="backpack" />
+                <img src="./Images/analysis.png" alt="analysis" />
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </a>
             </li>
             <li><a href="/">
-                <img src="./Images/books.png" alt="books" />
+                <img src="./Images/charting.png" alt="charting" />
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </a>
             </li>
             <li><a href="/">
-                <img src="./Images/bus.png" alt="bus" />
+                <img src="./Images/kpi-reports.png" alt="KPI reports" />
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </a>
             </li>
             <li><a href="/">
-                <img src="./Images/sandwich.png" alt="sandwich" />
+                <img src="./Images/online-dashboards.png" alt="Online dashboards" />
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </a>
             </li>
             <li><a href="/">
-                <img src="./Images/first-aid-kit.png" alt="firstAid" />
+                <img src="./Images/gd.png" alt="Graphic design" />
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </a>
             </li>
             <li><a href="/">
-                <img src="./Images/plan.png" alt="plan" />
+                <img src="./Images/slt.png" alt="Salesforce Training" />
                 <h3>Lorem Ipsum</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </a>

@@ -1,9 +1,7 @@
-import {HeaderArea} from "../HeaderArea";
 import {HeadBlock} from "../HeadBlock";
 import {Welcome} from "../Welcome";
 import {Services} from "../Services";
 import {Promos} from "../Promos";
-import {Footer} from "../Footer";
 
 const Home = (props) => {
     return (
@@ -14,7 +12,6 @@ const Home = (props) => {
                 <Services />
                 <Promos promos={props.promos} />
             </main>
-            <Footer />
         </div >
     )
 };

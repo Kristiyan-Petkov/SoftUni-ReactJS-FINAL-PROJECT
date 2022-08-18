@@ -1,6 +1,4 @@
-import {HeaderArea} from "../HeaderArea";
 import {Services} from "../Services";
-import {Footer} from "../Footer";
 
 const ServicesPage = () => {
     return (
@@ -8,7 +6,6 @@ const ServicesPage = () => {
             <main>
                 <Services />
             </main>
-            <Footer />
         </div >
     )
 };

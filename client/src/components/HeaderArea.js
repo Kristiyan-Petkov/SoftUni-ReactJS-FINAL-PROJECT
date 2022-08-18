@@ -30,9 +30,9 @@ export const HeaderArea = () => {
                         <li><NavLink to="/services" className={setStyle}>CATALOG</NavLink></li>
                         {/* <li><NavLink to="/contact" className={setStyle}>CONTACT</NavLink></li> */}
                         <li><NavLink to="/profile" className={setStyle}>YOUR PROFILE</NavLink></li>
-                        <li><NavLink to="/auth/login" className={setStyle}>LOGIN</NavLink></li>
-                        <li><NavLink to="/auth/register" className={setStyle}>REGISTER</NavLink></li>
-                        <li><NavLink to="/auth/logout" className={setStyle}>LOGOUT</NavLink></li>
+                        <li><NavLink to="/login" className={setStyle}>LOGIN</NavLink></li>
+                        <li><NavLink to="/register" className={setStyle}>REGISTER</NavLink></li>
+                        <li><NavLink to="/logout" className={setStyle}>LOGOUT</NavLink></li>
 
                         <li>
                             <ul>
@@ -43,10 +43,6 @@ export const HeaderArea = () => {
                     </ul>
                 </nav>
             </section>
-            {/* <section className="site-header">
-                    <h1>Lorem Ipsum</h1>
-                    <button>LEARN MORE</button>
-                </section> */}
         </header >
     );
 }
