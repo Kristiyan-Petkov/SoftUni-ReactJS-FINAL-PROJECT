@@ -10,8 +10,8 @@ const Login = () => {
     }
 
     return (
-        <section id="login-page" className="auth">
-        <form id="login" className="login" onSubmit={loginHandler}>
+        <section id="login-page" className="auth-login">
+        <form id="login" className="auth" onSubmit={loginHandler}>
           <div className="container">
             <div className="brand-logo" />
             <h1>Please enter your credentials</h1>
@@ -24,7 +24,7 @@ const Login = () => {
             />
             <label htmlFor="login-pass">Password:</label>
             <input type="password" id="login-password" name="password" placeholder="Password"/>
-            <input type="submit" className="btn-submit-login" value="Login" />
+            <input type="submit" className="btn-submit-auth" value="Login" />
             <p className="field">
               <span>
                 If you don't have profile click <Link to="/register">here</Link>

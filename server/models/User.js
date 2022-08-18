@@ -7,11 +7,11 @@ const userSchema = new Schema(
       required: true,
       minLength: [3, 'User name should be at least 3 characters long!'],
     },
-    email: {
-      type: String,
-      required: true,
-      match: [/^[A-Za-z0-9_\.]+@[A-Za-z]+\.[A-Za-z]{2,3}$/, 'Email is not valid!'],
-    },
+    // email: {
+    //   type: String,
+    //   required: true,
+    //   match: [/^[A-Za-z0-9_\.]+@[A-Za-z]+\.[A-Za-z]{2,3}$/, 'Email is not valid!'],
+    // },
     password: {
       type: String,
       required: true,
@@ -20,6 +20,15 @@ const userSchema = new Schema(
       type: String,
       required: true,
       match: [/^https?:\/\/.+/, 'ImageUrl is not valid!'],
+    },
+    publicUsername: {
+      type: String,
+      required: true,
+      minLength: [3, 'Public username should be at least 3 characters long!'],
+    },
+    userType: {
+      type: String,
+      required: true,
     },
     offersOwner: [{
       type: String,

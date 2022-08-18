@@ -10,6 +10,7 @@ import P404 from "./components/main/P404";
 import Logout from "./components/main/Logout";
 import { Routes, Route } from "react-router-dom";
 import Login from "./components/Login";
+import Register from "./components/Register";
 
 function App() {
   const promoDeals = [
@@ -51,7 +52,7 @@ function App() {
         <Route path="/about" element={<ServicesPage/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/logout" element={<Logout/>}></Route>
-        {/* <Route path="/register" element={<Logout/>}></Route> */}
+        <Route path="/register" element={<Register/>}></Route>
         <Route path="*" element={<P404/>}></Route>
       </Routes>
       <Footer />

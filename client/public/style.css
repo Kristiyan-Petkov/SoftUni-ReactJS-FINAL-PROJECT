@@ -46,8 +46,6 @@ a {
 }
 
 nav i {
-    border: 1px solid black;
-    border-radius: 50%;
     padding: 5px;
 }
 
@@ -217,6 +215,11 @@ body>main>section.offers>p {
 footer {
     background: #1582B6;
     padding: 0 40px;
+    position:relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
 }
 
 footer p {
@@ -239,12 +242,17 @@ footer i {
     padding: 5px;
 }
 
-.login {
+.auth {
     padding-left: 30%;
     padding-right: 30%;
 }
 
-.btn-submit-login {
+.auth {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.btn-submit-auth {
     font-size: 18px;
     background: transparent;
     color: #1582B6;
@@ -253,7 +261,7 @@ footer i {
     margin: 5px;
 }
 
-.btn-submit-login:hover {
+.btn-submit-auth:hover {
     font-size: 18px;
     background: #1582B6;
     color: white;
