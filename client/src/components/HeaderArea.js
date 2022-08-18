@@ -36,7 +36,6 @@ export const HeaderArea = () => {
 
                         <li>
                             <ul>
-                                <li><Link to="/"><i className="fab fa-envelope"></i></Link></li>
                                 <li><a href="https://www.linkedin.com/company/nivis-services" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin"></i></a></li>
                             </ul>
                         </li>
