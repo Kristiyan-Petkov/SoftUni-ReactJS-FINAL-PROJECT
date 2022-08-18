@@ -5,7 +5,6 @@ import {Footer} from "../Footer";
 const ServicesPage = () => {
     return (
         <div className="App">
-            <HeaderArea />
             <main>
                 <Services />
             </main>

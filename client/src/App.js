@@ -1,4 +1,4 @@
-// import { HeaderArea } from "./components/HeaderArea";
+import { HeaderArea } from "./components/HeaderArea";
 // import { Welcome } from "./components/Welcome";
 // import { Services } from "./components/Services";
 // import { Promos } from "./components/Promos";
@@ -40,6 +40,7 @@ function App() {
 
   return (
     <div className="App">
+      <HeaderArea />
       <Routes>
         <Route path="/" element={<Home promos={promoDeals}/>}></Route>
         <Route path="/services" element={<Promotions promos={promoDeals}/>}></Route>

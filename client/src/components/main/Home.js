@@ -8,7 +8,6 @@ import {Footer} from "../Footer";
 const Home = (props) => {
     return (
         <div className="App">
-            <HeaderArea />
             <main>
                 <HeadBlock />
                 <Welcome />

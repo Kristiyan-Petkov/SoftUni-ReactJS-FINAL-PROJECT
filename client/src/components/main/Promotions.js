@@ -7,7 +7,6 @@ const Promotions = (props) => {
     // const {productId} = useParams();
     return (
         <div className="App">
-            <HeaderArea />
             <main>
                 <Promos promos={props.promos} />
             </main>
