@@ -9,12 +9,13 @@ import ServicesPage from "./components/main/ServicesPage";
 import P404 from "./components/main/P404";
 import Logout from "./components/main/Logout";
 import { Routes, Route } from "react-router-dom";
-import { Login } from "./components/Login";
+import Login from "./components/Login";
 
 function App() {
   const promoDeals = [
     {
       _id: 'ejbzvlzqbvoqbvozvbzee',
+      owner: 'Tom Consult',
       title: 'Analysis',
       subTitle: 'Insights and Reporting',
       description: '1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...',
@@ -23,6 +24,7 @@ function App() {
     },
     {
       _id: 'nvjqoznnqsnqpqssvioneoiv',
+      owner: 'Nivis',
       title: 'Charting',
       subTitle: 'PowerPoint and Keynote charting',
       description: '2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...',
@@ -31,6 +33,7 @@ function App() {
     },
     {
       _id: 'svsqvsdv9nnbbbbsposjdc',
+      owner: 'Jeremy Analytica',
       title: 'Data and KPI',
       subTitle: 'Databases and KPI sheets',
       description: '3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the...',

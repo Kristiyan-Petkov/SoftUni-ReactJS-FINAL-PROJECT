@@ -45,11 +45,12 @@ export const PromoDeal = (props) => {
     }, [deleted, props.title]);
 
     return (<li style={style}>
-        <img src={props.imgUrl} alt="promo-deal" />
+        <img src={props.imgUrl} alt="offer" />
         <section className="info">
             <div>
                 <h3>{props.title}</h3>
                 <p>{props.subTitle}</p>
+                <p>By: {props.owner}</p>
             </div>
             <div>
                 {props.price}€/h
@@ -57,9 +58,9 @@ export const PromoDeal = (props) => {
         </section>
         <section className="moreInfo">
             <p>{props.description}</p>
-            <button onClick={clickHandler}>Highlight</button>
+            <button onClick={clickHandler}>Like</button>
             <button style={styles} className={styles['delete-button']} onClick={deleteHandler}>Delete</button>
-            <button>GET TODAY</button>
+            <button>DETAILS</button>
         </section>
     </li>)
 }

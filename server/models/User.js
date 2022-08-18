@@ -2,15 +2,10 @@ const { Schema, model } = require('mongoose');
 
 const userSchema = new Schema(
   {
-    firstName: {
+    userName: {
       type: String,
       required: true,
-      minLength: [3, 'First name should be at least 3 characters long!'],
-    },
-    lastName: {
-      type: String,
-      required: true,
-      minLength: [3, 'Last name should be at least 3 characters long!'],
+      minLength: [3, 'User name should be at least 3 characters long!'],
     },
     email: {
       type: String,

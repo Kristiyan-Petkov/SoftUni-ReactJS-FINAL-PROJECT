@@ -1,7 +1,7 @@
 export const Welcome = () => {
     return (<section className="welcome">
-        <h2>Lorem Ipsum is simply</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <h2>NIVIS SERVICES is helping businesses grow!</h2>
+        <p>The easiest way to find and offer professional services.</p>
+        <p>Whether you are looking for the freelance professional perfectly suited to your project's needs, or you are here for your next freelance project - Nivis Services is the place to find it all.</p>
     </section>)
 }

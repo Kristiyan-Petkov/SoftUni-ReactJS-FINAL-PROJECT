@@ -1,29 +1,39 @@
-export const Login = () => {
+import styles from "./Login.module.css";
+import { Link } from "react-router-dom";
+
+const Login = () => {
+    const loginHandler = (e) => {
+        e.preventDefault();
+        // const [username, password] = Object.fromEntries(new FormData(e.target));
+        console.log(Object.fromEntries(new FormData(e.target)));
+        // console.log(password);
+    }
+
     return (
-        <form>
-            <h1 className="h3 mb-3 fw-normal">Please sign in</h1>
-            <div className="form-floating">
-                <input
-                    type="email"
-                    className="form-control"
-                    id="floatingInput"
-                    placeholder="name@example.com"
-                />
-                <label htmlFor="floatingInput">Email address</label>
-            </div>
-            <div className="form-floating">
-                <input
-                    type="password"
-                    className="form-control"
-                    id="floatingPassword"
-                    placeholder="Password"
-                />
-                <label htmlFor="floatingPassword">Password</label>
-            </div>
-            
-            <button className="w-100 btn btn-lg btn-primary" type="submit">
-                Sign in
-            </button>
+        <section id="login-page" className="auth">
+        <form id="login" className="login" onSubmit={loginHandler}>
+          <div className="container">
+            <div className="brand-logo" />
+            <h1>Please enter your credentials</h1>
+            <label htmlFor="username">Username:</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              placeholder="Username"
+            />
+            <label htmlFor="login-pass">Password:</label>
+            <input type="password" id="login-password" name="password" placeholder="Password"/>
+            <input type="submit" className="btn-submit-login" value="Login" />
+            <p className="field">
+              <span>
+                If you don't have profile click <Link to="/register">here</Link>
+              </span>
+            </p>
+          </div>
         </form>
-    )
-} 
+      </section>
+    );
+};
+
+export default Login;
