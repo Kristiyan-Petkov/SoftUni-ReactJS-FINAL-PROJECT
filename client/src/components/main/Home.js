@@ -10,7 +10,7 @@ const Home = (props) => {
                 <HeadBlock />
                 <Welcome />
                 <Services />
-                <Promos promos={props.promos} />
+                <Promos offers={props.offers} />
             </main>
         </div >
     )
