@@ -19,11 +19,11 @@ const getUser = async (req, res) => {
 };
 
 const addUser = async (req, res) => {
-  const { firstName, lastName, email, imageUrl, phoneNumber, address } = req.body;
-  const data = { firstName, lastName, email, imageUrl, phoneNumber };
+  const { username, password, publicUsername, imageUrl} = req.body;
+  const data = { username, password, publicUsername, imageUrl };
 
   try {
-    const createdUser = await userModel.create({ ...data, address });
+    const createdUser = await userModel.create({ ...data });
     const user = { ...data, _id: createdUser._id, createdAt: createdUser.createdAt, updatedAt: createdUser.updatedAt };
 
     res.status(200).json({ user });

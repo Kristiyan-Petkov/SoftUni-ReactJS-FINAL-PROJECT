@@ -27,7 +27,7 @@ export const HeaderArea = () => {
                     <ul>
                         <li><NavLink to="/" className={setStyle}>HOME</NavLink></li>
                         {/* <li><NavLink to="/about" className={setStyle}>ABOUT</NavLink></li> */}
-                        <li><NavLink to="/services" className={setStyle}>CATALOG</NavLink></li>
+                        <li><NavLink to="/catalog" className={setStyle}>CATALOG</NavLink></li>
                         {/* <li><NavLink to="/contact" className={setStyle}>CONTACT</NavLink></li> */}
                         <li><NavLink to="/profile" className={setStyle}>YOUR PROFILE</NavLink></li>
                         <li><NavLink to="/login" className={setStyle}>LOGIN</NavLink></li>

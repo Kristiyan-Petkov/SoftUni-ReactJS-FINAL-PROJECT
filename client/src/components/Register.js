@@ -36,7 +36,7 @@ const Register = () => {
                     <input
                         id="username"
                         type="text"
-                        name="userName"
+                        name="username"
                         onChange={changeHandler}
                         //issue with controlled value - adapt
                         value={values.username}
@@ -49,7 +49,7 @@ const Register = () => {
                 </div>
                 <div>
                     <label htmlFor="repeat-password">Repeat Password:</label>
-                    <input id="repeat-password" type="password" name="repeat-password" placeholder="Repeat password"/>
+                    <input id="repeat-password" type="password" name="repeat-password" placeholder="Repeat password" onChange={changeHandler}/>
                 </div>
                 <div>
                     <label htmlFor="public-username">Public profile name (visible by other users when you publish):</label>
@@ -61,14 +61,6 @@ const Register = () => {
                         placeholder="John Doe"
                     />
                 </div>
-                <div>
-                    <label htmlFor="user-type">User type:</label>
-                    <select name="userType" id="user-type" onChange={changeHandler}>
-                        <option value="Freelance">Freelance</option>
-                        <option value="Company">Company</option>
-                    </select>
-                </div>
-
                 <div>
                     <label htmlFor="imageUrl">Profile image:</label>
                     <input

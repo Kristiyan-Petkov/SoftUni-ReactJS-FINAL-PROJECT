@@ -4,6 +4,7 @@ import { HeaderArea } from "./components/HeaderArea";
 // import { Promos } from "./components/Promos";
 import { Footer } from "./components/Footer";
 import Home from "./components/main/Home";
+import Catalog from "./components/Catalog";
 import Promotions from "./components/main/Promotions";
 import ServicesPage from "./components/main/ServicesPage";
 import P404 from "./components/main/P404";
@@ -48,7 +49,7 @@ function App() {
       <HeaderArea />
       <Routes>
         <Route path="/" element={<Home promos={promoDeals}/>}></Route>
-        <Route path="/services" element={<Promotions promos={promoDeals}/>}></Route>
+        <Route path="/catalog" element={<Catalog promos={promoDeals}/>}></Route>
         <Route path="/about" element={<ServicesPage/>}></Route>
         <Route path="/login" element={<Login/>}></Route>
         <Route path="/logout" element={<Logout/>}></Route>
