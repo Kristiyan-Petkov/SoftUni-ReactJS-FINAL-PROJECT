@@ -8,6 +8,7 @@ const Catalog = ({
     return (<section className="offers">
         <h2>Catalog</h2>
         <p>Find the best solution to drive your business growth</p>
+        <button className="create-btn">CREATE NEW</button>
         <ul>
             {allDeals}
         </ul>

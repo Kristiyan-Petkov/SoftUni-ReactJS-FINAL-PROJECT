@@ -270,3 +270,22 @@ footer i {
     cursor: pointer;
     margin: 5px;
 }
+
+.create-btn {
+    font-size: 18px;
+    background: #1582B6;
+    color: white;
+    border: #1582B6 solid 2px;
+    padding: 7px;
+    margin: 5px;
+}
+
+.create-btn:hover {
+    font-size: 18px;
+    background: #FFBC39;
+    color: #5a7c8a;
+    border: #5a7c8a solid 2px;
+    padding: 7px;
+    cursor: pointer;
+    margin: 5px;
+}
